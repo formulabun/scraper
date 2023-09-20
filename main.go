@@ -30,7 +30,7 @@ func scrapeMs() {
 			loc := fmt.Sprintf("%s:%s", server.Ip, server.Port)
 			fmt.Printf("scraping %s\n", loc)
 			ctx := context.Background()
-			ctx, _ = context.WithTimeout(ctx, time.Second*10)
+			ctx, _ = context.WithTimeout(ctx, time.Second*120)
 			err := scrapeServer(loc, ctx)
 			if err != nil {
 				fmt.Println(err)
@@ -41,7 +41,7 @@ func scrapeMs() {
 
 func scrapeSingle(host string) {
 	ctx := context.Background()
-	ctx, _ = context.WithTimeout(ctx, time.Second*10)
+	ctx, _ = context.WithTimeout(ctx, time.Second*120)
 	err := scrapeServer(host, ctx)
 	if err != nil {
 		panic(err)
