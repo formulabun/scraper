@@ -14,7 +14,7 @@ import (
 	"go.formulabun.club/storage"
 )
 
-func extractFiles(c *extractor.Client, info network.ServerInfo, files chan metadatadb.File, ctx context.Context) error {
+func extractFiles(c *extractor.Client, info network.ServerInfo, files chan metadatadb.File, done chan struct{}, ctx context.Context) error {
 	source, err := url.Parse(strings.SafeNullTerminated(info.HttpSource[:]))
 	if err != nil {
 		return err
@@ -38,18 +38,24 @@ func extractFiles(c *extractor.Client, info network.ServerInfo, files chan metad
 		return nil
 	}
 
-	for {
+	defer close(files)
+
+	running := true
+	for running {
 		var err error
 		select {
 		case <-ctx.Done():
+			running = false
 			break
+		case _, ok := <-done:
+			running = ok
 		case f, ok := <-files:
-			if !ok {
-				break
-			}
-			fmt.Printf("new file: %s\n", f.Filename)
+			running = ok
 			if !storage.Has(f) {
+				fmt.Print("M")
 				err = saveFile(f)
+			} else {
+				fmt.Print("H")
 			}
 			if err != nil {
 				errs = append(errs, err)
@@ -62,21 +68,20 @@ func extractFiles(c *extractor.Client, info network.ServerInfo, files chan metad
 	return errors.Join(errs...)
 }
 
-func storeFileInfo(c *metadatadb.Client, files []metadatadb.File, filesToExtract chan metadatadb.File, ctx context.Context) error {
+func storeFileInfo(c *metadatadb.Client, files []metadatadb.File, filesToExtract chan metadatadb.File, done chan struct{}, ctx context.Context) error {
 	fileChan := make(chan metadatadb.File)
 	go func() {
 		defer close(fileChan)
 		for _, f := range files {
 			select {
-			case <-ctx.Done():
+			case _, _ = <-ctx.Done():
 				return
-			default:
-				fileChan <- f
+			case fileChan <- f:
 			}
 		}
 	}()
 
-	defer close(filesToExtract)
+	defer close(done)
 
 	for {
 		select {
@@ -92,7 +97,14 @@ func storeFileInfo(c *metadatadb.Client, files []metadatadb.File, filesToExtract
 				continue
 			}
 			if !existed {
-				filesToExtract <- f
+				select {
+				case <-ctx.Done():
+					return errors.New("Cancelled operation")
+				case filesToExtract <- f:
+					break
+				}
+			} else {
+				fmt.Print("o")
 			}
 		}
 	}
