@@ -5,7 +5,7 @@ go 1.20
 require (
 	go.formulabun.club/masterserver v0.0.1
 	go.formulabun.club/metadatadb v0.0.2
-	go.formulabun.club/srb2kart v0.0.6
+	go.formulabun.club/srb2kart v0.0.8
 )
 
 require (

@@ -49,6 +49,10 @@ go.formulabun.club/srb2kart v0.0.5 h1:JhewFyN5Bt5467wFO/sWB1iQ5XK4wRzoF4jFWVhzHV
 go.formulabun.club/srb2kart v0.0.5/go.mod h1:J5shaQmUtXJNuLFYPLqmO/mTa12qB+cKwr2AKRlU638=
 go.formulabun.club/srb2kart v0.0.6 h1:0i1XpxDcwi2sLn9eZLwd6iswqV0ncKt+DHTYVjPS2es=
 go.formulabun.club/srb2kart v0.0.6/go.mod h1:J5shaQmUtXJNuLFYPLqmO/mTa12qB+cKwr2AKRlU638=
+go.formulabun.club/srb2kart v0.0.7 h1:uMZMTP0OQfoyjxvhoosxKBH/FphDJs5Yp1d+zBjbwgs=
+go.formulabun.club/srb2kart v0.0.7/go.mod h1:J5shaQmUtXJNuLFYPLqmO/mTa12qB+cKwr2AKRlU638=
+go.formulabun.club/srb2kart v0.0.8 h1:SMbY7gbqb4NaSx0+8hfCWB0wnpyMJkWc6tcngZHuIj8=
+go.formulabun.club/srb2kart v0.0.8/go.mod h1:CMhFAPM1E9eW4YLi3DQFaSYoUtOHZXW74ocD/qt9nic=
 go.formulabun.club/storage v0.0.0-20230919192514-28bb71dd6c0b h1:+Z9WqKmAgj1ahyPmlmPHbYWpEG3TTr7jxg6kKM0aU78=
 go.formulabun.club/storage v0.0.0-20230919192514-28bb71dd6c0b/go.mod h1:5ocsFL/26x9DYZ3+BRaPbZvimTLGgZtAvOdQFLPe9tk=
 go.mongodb.org/mongo-driver v1.12.0 h1:aPx33jmn/rQuJXPQLZQ8NtfPQG8CaqgLThFtqRb0PiE=
