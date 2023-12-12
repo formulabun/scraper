@@ -53,6 +53,8 @@ go.formulabun.club/metadatadb v0.0.2 h1:/UZmE1GzZ6mTjhgSeX1wGVqo3EdYbwzeyjreqgqR
 go.formulabun.club/metadatadb v0.0.2/go.mod h1:1qQdQlIlPbFf3s31AvSVf5/ppDfvyRTJeaxzyDQhsxI=
 go.formulabun.club/metadatadb v0.0.4 h1:vVh/zsGRKncjyy9ZuG4qF6tdq101cjQt5BtpaHJeHKU=
 go.formulabun.club/metadatadb v0.0.4/go.mod h1:1qQdQlIlPbFf3s31AvSVf5/ppDfvyRTJeaxzyDQhsxI=
+go.formulabun.club/metadatadb v0.0.5 h1:u+sn30DEr4FJPjvnhQFlHUcpt6SBo+JCUpVHVsVuTCg=
+go.formulabun.club/metadatadb v0.0.5/go.mod h1:1qQdQlIlPbFf3s31AvSVf5/ppDfvyRTJeaxzyDQhsxI=
 go.formulabun.club/srb2kart v0.0.5 h1:JhewFyN5Bt5467wFO/sWB1iQ5XK4wRzoF4jFWVhzHVI=
 go.formulabun.club/srb2kart v0.0.5/go.mod h1:J5shaQmUtXJNuLFYPLqmO/mTa12qB+cKwr2AKRlU638=
 go.formulabun.club/srb2kart v0.0.6 h1:0i1XpxDcwi2sLn9eZLwd6iswqV0ncKt+DHTYVjPS2es=
