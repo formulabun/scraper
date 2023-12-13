@@ -43,6 +43,10 @@ go.formulabun.club/extractor v0.0.1 h1:wJBKcGvMgpjZTGn0aHnVt7JjBw3FQ/A0qmzf7QkCf
 go.formulabun.club/extractor v0.0.1/go.mod h1:poT19P7U6FNzsl1mOX+8MkF7jOPCljzyyBP0qcQB3+A=
 go.formulabun.club/extractor v0.0.3 h1:Xlwekbbsp1WpYSzCc2rdiCWkbDWeTt/TInk8FRZ3JPk=
 go.formulabun.club/extractor v0.0.3/go.mod h1:poT19P7U6FNzsl1mOX+8MkF7jOPCljzyyBP0qcQB3+A=
+go.formulabun.club/extractor v0.0.4 h1:21ju3PWsdQTkUvx62TF01fwh2FGtMeC5YwS+/W3jOnA=
+go.formulabun.club/extractor v0.0.4/go.mod h1:5LvzE+XdLbRjidWhcEFejBb4j/OQKHJ4+8bW8N93BTI=
+go.formulabun.club/extractor v0.0.5 h1:acW+rgZWDG6cgr5V7vARhVWXwgLMkATGJrn2jK5IQjA=
+go.formulabun.club/extractor v0.0.5/go.mod h1:5LvzE+XdLbRjidWhcEFejBb4j/OQKHJ4+8bW8N93BTI=
 go.formulabun.club/functional v0.0.0-20221218180115-a1d18adcf950 h1:fsiWO87TPGF4rDRyYaeFAbwTIAsrTuHrvSxLehieSh0=
 go.formulabun.club/functional v0.0.0-20221218180115-a1d18adcf950/go.mod h1:fBYvWF+wIMLTXhQKS9o1mh5EccRFqqnY0tprsZU5EEg=
 go.formulabun.club/masterserver v0.0.1 h1:7fgJspygYvfSs4cTzVmTLH7cGC0axza9R3nTvhdnXoo=
@@ -67,6 +71,8 @@ go.formulabun.club/storage v0.0.0-20230919192514-28bb71dd6c0b h1:+Z9WqKmAgj1ahyP
 go.formulabun.club/storage v0.0.0-20230919192514-28bb71dd6c0b/go.mod h1:5ocsFL/26x9DYZ3+BRaPbZvimTLGgZtAvOdQFLPe9tk=
 go.formulabun.club/storage v0.0.1 h1:R/H/CcX+gxvcSfsjyX7ljtsCVbTkbxlQfM3Y/gccB+8=
 go.formulabun.club/storage v0.0.1/go.mod h1:5ocsFL/26x9DYZ3+BRaPbZvimTLGgZtAvOdQFLPe9tk=
+go.formulabun.club/storage v0.0.2 h1:+sR2e6uT5OwAq3abo1sfZhK8jXIjrMOGQFvEZk8CkSw=
+go.formulabun.club/storage v0.0.2/go.mod h1:5ocsFL/26x9DYZ3+BRaPbZvimTLGgZtAvOdQFLPe9tk=
 go.mongodb.org/mongo-driver v1.12.0 h1:aPx33jmn/rQuJXPQLZQ8NtfPQG8CaqgLThFtqRb0PiE=
 go.mongodb.org/mongo-driver v1.12.0/go.mod h1:AZkxhPnFJUoH7kZlFkVKucV20K387miPfm7oimrSmK0=
 go.mongodb.org/mongo-driver v1.12.1 h1:nLkghSU8fQNaK7oUmDhQFsnrtcoNy7Z6LVFKsEecqgE=

@@ -3,12 +3,12 @@ module go.formulabun.club/scraper
 go 1.20
 
 require (
-	go.formulabun.club/extractor v0.0.3
+	go.formulabun.club/extractor v0.0.5
 	go.formulabun.club/functional v0.0.0-20221218180115-a1d18adcf950
 	go.formulabun.club/masterserver v0.0.1
 	go.formulabun.club/metadatadb v0.0.5
 	go.formulabun.club/srb2kart v0.0.8
-	go.formulabun.club/storage v0.0.1
+	go.formulabun.club/storage v0.0.2
 )
 
 require (
